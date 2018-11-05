@@ -1,5 +1,7 @@
 package com.example.imac.daggerdemo.manager;
 
+import android.util.Log;
+
 import javax.inject.Inject;
 
 import retrofit2.Retrofit;
@@ -13,7 +15,7 @@ import retrofit2.Retrofit;
  */
 
 public class RepositoryManager {
-
+    private static final String TAG = "RepositoryManager";
     @Inject
     Retrofit mRetrofit;
 
