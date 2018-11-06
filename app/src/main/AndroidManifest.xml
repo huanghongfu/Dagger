@@ -11,13 +11,15 @@
         android:name=".simple.App"
         android:theme="@style/AppTheme">
         <activity android:name=".simple.main.MainActivity">
+
+        </activity>
+        <activity android:name=".simple.second.SecondActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".simple.second.SecondActivity" />
         <activity android:name=".simple.simple.ThridActivity" />
         <activity android:name=".simple.simple.FourActivity" />
     </application>

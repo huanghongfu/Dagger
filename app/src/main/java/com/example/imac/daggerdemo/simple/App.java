@@ -2,6 +2,7 @@ package com.example.imac.daggerdemo.simple;
 
 import android.app.Application;
 
+import com.blankj.utilcode.util.Utils;
 import com.example.imac.daggerdemo.component.AppComponent;
 import com.example.imac.daggerdemo.component.DaggerAppComponent;
 import com.example.imac.daggerdemo.module.AppDelModule;
@@ -33,6 +34,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         mApp = this;
+        Utils.init(this);
         mAppComponent = DaggerAppComponent
                 .builder()
                 .appDelModule(new AppDelModule(this))

@@ -10,6 +10,7 @@ def glide_version = '4.8.0'
 def routerVersion = "1.2.4"
 def routerCompilerVersion = "1.1.4"
 def adapter_version = "2.9.30"
+def utils_version = "1.13.9"
 
 project.ext {
     android = [
@@ -76,8 +77,8 @@ project.ext {
             "junit"                      : "junit:junit:4.12",
 
             //rxCache
-            "rxCache"                     : "com.github.VictorAlbertos.RxCache:runtime:1.8.1-2.x",
-            "rxCache-Jolyglot"            : "com.github.VictorAlbertos.Jolyglot:gson:0.0.3",
+            "rxCache"                    : "com.github.VictorAlbertos.RxCache:runtime:1.8.1-2.x",
+            "rxCache-Jolyglot"           : "com.github.VictorAlbertos.Jolyglot:gson:0.0.3",
 
             //mock
             "mockito-kotlin"             : "com.nhaarman:mockito-kotlin-kt1.1:1.5.0",
@@ -93,6 +94,7 @@ project.ext {
             "espresso-test-runner"       : "com.android.support.test:runner:0.5",
             "espresso-test-rules"        : "com.android.support.test:rules:0.5",
 
-            "base-adapter"               : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${adapter_version}"
+            "base-adapter"               : "com.github.CymChad:BaseRecyclerViewAdapterHelper:${adapter_version}",
+            "blankj-utils"               : "com.blankj:utilcode:${utils_version}"
     ]
 }

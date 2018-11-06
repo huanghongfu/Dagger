@@ -54,4 +54,5 @@ dependencies {
 //    api rootProject.ext.dependencies["okhttp3-logging-interceptor"]
     //base-adapter
     api rootProject.ext.dependencies["base-adapter"]
+    api rootProject.ext.dependencies["blankj-utils"]
 }
